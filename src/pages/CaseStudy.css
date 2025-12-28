@@ -1,0 +1,117 @@
+.case-study {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cs-header {
+    margin-bottom: 4rem;
+    max-width: 800px;
+}
+
+.cs-category {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    display: block;
+    font-weight: 500;
+}
+
+.cs-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.cs-intro {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    max-width: 600px;
+}
+
+.cs-social-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(244, 244, 244, 0.3);
+    padding-bottom: 2px;
+}
+
+.cs-image-container {
+    width: 100%;
+    margin-bottom: 6rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cs-hero-image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+.cs-content {
+    max-width: 700px;
+    /* Narrower for reading */
+}
+
+.cs-section {
+    margin-bottom: 5rem;
+}
+
+.cs-section-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.cs-section-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.cs-footer {
+    margin-top: 8rem;
+    border-top: 1px solid rgba(244, 244, 244, 0.1);
+    padding-top: 3rem;
+}
+
+.cs-back-link {
+    font-size: 1.1rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.cs-back-link:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .cs-title {
+        font-size: 2.5rem;
+    }
+
+    .cs-hero-image {
+        max-height: 50vh;
+    }
+}
