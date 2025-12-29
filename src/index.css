@@ -1,13 +1,16 @@
 :root {
   --bg-color: #0c0c0c;
   --text-color: #f4f4f4;
-  --accent-color: #94a3b8; /* Muted slate */
+  --accent-color: #94a3b8;
+  /* Muted slate */
   --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
   --spacing-container: 1200px;
   --spacing-section: 8rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -45,11 +48,72 @@ img {
   padding: 0 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
   line-height: 1.2;
 }
 
 .section {
   padding-bottom: var(--spacing-section);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-up {
+  opacity: 0;
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
 }

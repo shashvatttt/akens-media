@@ -27,8 +27,8 @@ const Work = () => {
         <section className="work section container">
             <h2 className="section-title">Selected Work</h2>
             <div className="work-list">
-                {projects.map((project) => (
-                    <div key={project.id} className="work-item">
+                {projects.map((project, index) => (
+                    <div key={project.id} className="work-item slide-up" style={{ animationDelay: `${index * 200}ms` }}>
                         <div className="work-image-container">
                             <Link to={`/work/${project.slug}`}>
                                 <img src={project.image} alt={project.title} className="work-image" />

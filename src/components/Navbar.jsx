@@ -3,7 +3,7 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <nav className="navbar container">
-            <a href="/" className="navbar-brand">Akens Media</a>
+            <a href="/" className="navbar-brand">AKENS MEDIA</a>
             <div className="navbar-links">
                 <a href="/#work">Work</a>
                 <a href="/#services">Services</a>

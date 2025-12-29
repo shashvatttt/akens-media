@@ -1,9 +1,11 @@
 import './Services.css'
 
 const services = [
+    { title: "Video Editing", description: "Premium video editing that tells your story with pacing, rhythm, and impact." },
     { title: "Branding & Identity", description: "Comprehensive visual systems that distinguish your business in a crowded market." },
     { title: "Digital & Social Design", description: "High-impact digital assets and social media content that drives engagement." },
-    { title: "Packaging & Product Design", description: "Tactile brand experiences that create a lasting physical connection." }
+    { title: "Packaging & Product Design", description: "Tactile brand experiences that create a lasting physical connection." },
+    { title: "Client Website Design / Development", description: "High-performance, aesthetic websites built to convert and impress." }
 ]
 
 const Services = () => {
@@ -12,7 +14,7 @@ const Services = () => {
             <h2 className="section-title">Our Expertise</h2>
             <div className="services-list">
                 {services.map((service, index) => (
-                    <div key={index} className="service-item">
+                    <div key={index} className="service-item slide-up" style={{ animationDelay: `${index * 100}ms` }}>
                         <h3 className="service-title">{service.title}</h3>
                         <p className="service-description">{service.description}</p>
                     </div>
